@@ -1,4 +1,4 @@
-(defproject retry "1.0.0"
+(defproject retry "1.0.1"
   :description "Retry on some exceptions."
   :dependencies
     [[org.clojure/clojure "1.3.0"]
