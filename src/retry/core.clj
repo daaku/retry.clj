@@ -1,5 +1,9 @@
 (ns retry.core
-  "A library to retry on some exceptions"
+  "<a href='http://travis-ci.org/nshah/retry.clj'>
+  <img src='https://secure.travis-ci.org/nshah/retry.clj.png'>
+  </a>
+
+  A library to retry on some exceptions."
   {:author "Naitik Shah"}
   (:use [slingshot.slingshot :only [throw+ try+]]))
 
