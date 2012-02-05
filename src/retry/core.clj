@@ -3,7 +3,9 @@
   {:author "Naitik Shah"}
   (:use [slingshot.slingshot :only [throw+ try+]]))
 
-(defmacro try-times [retries exception-matcher & body]
+(defmacro try-times
+  "Try and retry the given body if the given exception matched."
+  [retries exception-matcher & body]
   `(loop [retries# ~retries]
      (if-let [result# (try+
                         (do ~@body)
